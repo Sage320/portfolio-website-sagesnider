@@ -1,0 +1,70 @@
+ul {list-style: none; margin: 0px; padding: 0px;}
+img {width: 100%;}
+.open-title {
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 125px;
+    line-height: 1;
+}
+.logo {
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 100px;
+    line-height: 1;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+.nav-button {
+    text-decoration: none;
+    color: #1e1866;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f6f2ff;
+    color: #1e1866;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid #1e1866;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:visited {
+    opacity: 60%;
+}
+.button:hover {
+    background-color: #1e1866;
+    color: #f6f2ff;
+}
+.button:active {
+    background-color: #1e1866;
+    color: #f6f2ff;
+}
+.footer-button {
+    text-decoration: none;
+    color: #1e1866;
+}
+/* colors: black - HEX191919, purple: 1E1866 lavender: HexF6F2FF

@@ -1,14 +1,167 @@
-ul {list-style: none; margin: 0px; padding: 0px;}
-img {width: 100%;}
+* {
+    box-sizing: border-box;
+}
+.container {display:grid; 
+    grid-template-rows: auto 1fr auto;
+   grid-template-columns: 100%;}
+header {
+    grid-row: 1 / 2;
+    grid-column: 100%;
+    background-color: #f6f2ff;
+    padding: 15px;
+    display: flex;
+}
+header h1 {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px;
+}
+header nav {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5px;
+}
+main {
+    grid-row: 2 / 3;
+    grid-column: 100%;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hero {
+    text-align: center;
+    margin: 6em ;
+}
+.work-header {
+    text-align: center;
+    margin: 2em;
+}
+.work-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+img {
+    max-width:100%;
+}
+.thumbnail {
+    width: 70vw;
+}
+.thumbnail-text {
+    padding: 15px;
+    margin: 10px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+}
+.about-photo {
+    width: 40vw;
+    padding-left: 10vw
+}
+.about-text {
+    width: 50vw;
+}
+.skills-header {
+    text-align: center;
+    margin: 3em;
+}
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.skills-list {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    background-color: #f6f2ff;
+    padding: 15px;
+}
+.tools-list {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    background-color: #f4f2f0;
+    padding: 15px;
+}
+.project-pictures-t {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.project-pictures-dt {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #fff3e4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-pictures-p {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #f4f2f0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-text {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+footer {
+    grid-row: 3 / 4;
+    grid-column: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-button {
+    display: inline;
+    margin: 5px;
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+.footer-text {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.nav-button {
+    display: inline;
+    color: #1e1866;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px;
+}
+.nav-button:hover {
+    opacity: 60%;
+}
 .open-title {
     font-family: 'Zen Tokyo Zoo', sans-serif;
     font-size: 125px;
     line-height: 1;
-}
-.logo {
-    font-family: 'Zen Tokyo Zoo', sans-serif;
-    font-size: 100px;
-    line-height: 1;
+    color: #1e1866
 }
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -35,12 +188,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-.nav-button {
-    text-decoration: none;
-    color: #1e1866;
-}
 .button {
-    display: inline-block;
     text-align: center;
     text-decoration: none;
     background-color: #f6f2ff;

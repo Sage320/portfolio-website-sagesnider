@@ -7,7 +7,7 @@
 header {
     grid-row: 1 / 2;
     grid-column: 100%;
-    background-color: #f6f2ff;
+    background-color: #e7e4ef;
     padding: 15px;
     display: flex;
 }
@@ -53,7 +53,7 @@ footer {
     color: #1e1866
 }
 .header-nav {
-    width: 50vw;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -87,28 +87,28 @@ footer {
 }
 /* project pages */
 .project-pictures-t {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .project-pictures-dt {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #fff3e4;
     margin-left: 20px;
     margin-right: 20px;
 }
 .project-pictures-p {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #f4f2f0;
     margin-left: 20px;
     margin-right: 20px;
 }
 .project-text {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 12vw;
-    padding-right: 12vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 /* about content */
 .about-container {
@@ -129,9 +129,9 @@ footer {
     margin: 15px;
 }
 .picture-text {
-    background: #f6f2ff;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    background: #e7e4ef;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
@@ -142,11 +142,17 @@ footer {
 }
 .skills-tools {
     display: flex;
-    justify-content: center;
-    background: #f6f2ff;
+    align-items: center;
+    background: #e7e4ef;
     margin: 10px;
 }
 .skills {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+.tools {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -171,6 +177,29 @@ footer {
 .icon-email {
     width: 50px;
     height: 40px;
+}
+/* animation */
+.animation-position {
+    display: flex;
+    align-items: center;
+}
+.sun-icon {
+    padding: 5px;
+    position: relative;
+    margin: 10px;
+    animation: spin 8s infinite alternate;}
+@keyframes spin {
+        0%, 100% {color:#e7e4ef; left:0; top:0;}
+        50% {color:#1e1866; left:50%; top:0; transform: rotate(180deg);}
+    }
+.line-animation {
+    position: relative;
+    animation: back-forth 8s infinite alternate;
+}
+@keyframes back-forth {
+    0%,100% {color:#e7e4ef; left:0; top:0;}
+    50% {color:#1e1866; left:50%; top:0;}
+
 }
 ul {
     list-style: none;
@@ -206,7 +235,7 @@ h4 {
 .button {
     text-align: center;
     text-decoration: none;
-    background-color: #f6f2ff;
+    background-color: #e7e4ef;
     color: #1e1866;
     font-weight: 400;
     padding: 10px;
@@ -220,11 +249,11 @@ h4 {
 }
 .button:hover {
     background-color: #1e1866;
-    color: #f6f2ff;
+    color: #e7e4ef;
 }
 .button:active {
     background-color: #1e1866;
-    color: #f6f2ff;
+    color: #e7e4ef;
 }
 .footer-button {
     text-decoration: none;
@@ -243,7 +272,7 @@ h4 {
         display:flex; 
         flex-direction: column; 
         z-index: 999999;}
-}
+    }
 @media only screen and (min-width: 768px) {
     /* work-content */
     .project-container {
@@ -260,29 +289,32 @@ h4 {
         align-items: center;
     }
     .thumbnail-text {
-        width: 70vw;
+        width: 70%;
         padding: 10px;
         margin: 5px;
     }
     /* about content */
     .picture-text {
-        background: #f6f2ff;
-        padding-left: 15vw;
-        padding-right: 15vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        background: #e7e4ef;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     .skills-tools {
         display: flex;
-        flex-direction: column;
-        background: #f6f2ff
+        justify-content: center;
+        background: #e7e4ef
     }
     .skills {
-        margin: 5px;
+        width: 30%;
+        margin: 10px;
         padding: 5px;
     }
-}
-@media only screen and (min-width: 992px) {
-
+    .tools {
+        width: 30%;
+        margin: 10px;
+        padding: 5px;
+    }
 }
 /* colors: black - HEX191919, purple: 1E1866 lavender: HexF6F2FF

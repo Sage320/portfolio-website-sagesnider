@@ -18,14 +18,13 @@ header h1 {
     align-items: flex-end;
     margin: 5px;
 }
-main {
+/*main {
     grid-row: 2 / 3;
     grid-column: 100%;
-    display: flex;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-}
+}*/
 footer {
     grid-row: 3 / 4;
     grid-column: 100%;
@@ -74,17 +73,22 @@ footer {
     margin: 5px;
     display: flex;
     flex-direction: column;
+   
 }
 .thumbnail-container {
     margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.thumbnail {
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
 }
 .thumbnail-text {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
 }
 /* project pages */
 .project-pictures-t {
@@ -121,43 +125,36 @@ footer {
     margin: 15px;
     color: #1e1866;
 }
-.about-picture {
+.picture-center {
     margin: 10px;
-}
-.picture {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
+    padding: 10px;
+    text-align: center;
 }
 .picture-text {
     background: #e7e4ef;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-}
-.about-resume {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .skills-tools {
     display: flex;
-    align-items: center;
+    align-items: top;
+    justify-content: center;
     background: #e7e4ef;
     margin: 10px;
 }
 .skills {
-    display: flex;
-    justify-content: center;
+    text-align: left;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    width: 30%;
 }
 .tools {
-    display: flex;
-    justify-content: center;
+    text-align: left;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    width: 30%;
 }
 /* resume */
 .resume {
@@ -285,42 +282,19 @@ h4 {
         margin: 5px;
         display: flex;
     }
-    .thumbnail {
+    .thumbnail1 {
         margin: 10px;
         padding: 10px;
     }
-    .thumbnail-container {
+    .thumbnail-container1 {
         margin: 10px;
         display: flex;
         align-items: center;
     }
-    .thumbnail-text {
+    .thumbnail-text1 {
         width: 70%;
         padding: 10px;
         margin: 5px;
-    }
-    /* about content */
-    .picture-text {
-        background: #e7e4ef;
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
-    .skills-tools {
-        display: flex;
-        justify-content: center;
-        background: #e7e4ef
-    }
-    .skills {
-        width: 30%;
-        margin: 10px;
-        padding: 5px;
-    }
-    .tools {
-        width: 30%;
-        margin: 10px;
-        padding: 5px;
     }
 }
 /* colors: black - HEX191919, purple: 1E1866 lavender: HexF6F2FF

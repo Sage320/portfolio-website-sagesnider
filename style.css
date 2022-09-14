@@ -50,7 +50,7 @@ footer {
     font-family: 'Zen Tokyo Zoo', sans-serif;
     font-size: 125px;
     line-height: 1;
-    color: #1e1866
+    color: #1e1866;
 }
 .header-nav {
     width: 50%;
@@ -68,6 +68,41 @@ footer {
     text-align: center;
     margin: 2em;
 }
+/* nav CF */
+.nav-position {
+    display: inline-block;
+    margin-top: 60px;
+}
+.title-position {
+    display: inline-block;
+}
+.title {
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 125px;
+    line-height: 1;
+    color: #1e1866;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position:relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    left: 150px;
+    right: 0;
+    top: 200px;
+    padding-right: 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
 /* work homepage */
 .project-container {
     margin: 5px;
@@ -295,6 +330,12 @@ h4 {
         width: 70%;
         padding: 10px;
         margin: 5px;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display:none;
     }
 }
 /* colors: black - HEX191919, purple: 1E1866 lavender: HexF6F2FF

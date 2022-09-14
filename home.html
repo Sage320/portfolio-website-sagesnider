@@ -11,33 +11,24 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-        <!-- CDN link to SlickNav CSS  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"> 
         <link href="style.css" type="text/css" rel="stylesheet">
-        <!--link to jquery-->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <!--link to slicknav specific link-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-        <!--script for slicknav mobilemenu-->
-        <script type="text/javascript">
-            $(document).ready(function () {
-              $("#menu").slicknav({
-                  prependTo: "#slicknav-menu"
-              });
-          });
       </script>
     </head>
     <body>
         <div class="container">
             <header>
-                <h1 class="open-title">sage snider</h1>
-                <div class="header-nav">
-                    <nav id="slicknav-menu"></nav>
-                    <nav id="menu">
+                <div class="title-position">
+                    <h1 class="title">sage snider</h1>
+                </div>
+                <div class="navtoggle" id="myNavtoggle">
+                    <nav class="nav-position">
                         <ul>
                             <li class="nav-button"><a href="index.html">Work</a></li>
                             <li class="nav-button"><a href="about.html">About</a></li>
                             <li class="nav-button"><a href="#contact">Contact</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars fa-2x"></i></a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -141,6 +132,10 @@
                 </div>
             </footer>
         </div>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

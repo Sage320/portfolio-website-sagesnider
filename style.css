@@ -9,7 +9,6 @@ header {
     grid-column: 100%;
     background-color: #e7e4ef;
     padding: 15px;
-    display: flex;
 }
 header h1 {
     width: 50vw;
@@ -46,6 +45,9 @@ footer {
     opacity: 60%;
     transition-duration: 0.4s;
 }
+.header {
+    display: flex;
+}
 .open-title {
     font-family: 'Zen Tokyo Zoo', sans-serif;
     font-size: 125px;
@@ -54,10 +56,10 @@ footer {
 }
 .header-nav {
     width: 50%;
+    margin: 5px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 5px;
 }
 .hero {
     text-align: center;

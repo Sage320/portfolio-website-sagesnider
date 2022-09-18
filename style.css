@@ -6,7 +6,7 @@
    grid-template-columns: 100%;}
 header {
     grid-row: 1 / 2;
-    grid-column: 100%;
+    grid-column: 1;
     background-color: #e7e4ef;
     padding: 15px;
 }
@@ -26,7 +26,7 @@ header h1 {
 }*/
 footer {
     grid-row: 3 / 4;
-    grid-column: 100%;
+    grid-column: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,28 +129,28 @@ footer {
 }
 /* project pages */
 .project-pictures-t {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .project-pictures-dt {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #fff3e4;
     margin-left: 20px;
     margin-right: 20px;
 }
 .project-pictures-p {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #f4f2f0;
     margin-left: 20px;
     margin-right: 20px;
 }
 .project-text {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 16%;
+    padding-right: 16%;
 }
 /* about content */
 .about-container {
@@ -176,7 +176,7 @@ footer {
 }
 .skills-tools {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     justify-content: center;
     background: #e7e4ef;
     margin: 10px;
@@ -195,8 +195,10 @@ footer {
 }
 /* resume */
 .resume {
-    margin: 10px;
-    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 20px;
 }
 /* footer */
 .footer-button {
@@ -240,6 +242,31 @@ footer {
     0%,100% {color:#e7e4ef; left:0; top:0;}
     50% {color:#1e1866; left:50%; top:0;}
 
+}
+/* contact page */
+.contact-text {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.contact-list {
+    margin: auto;
+    text-align: center;
+}
+.form {
+    background: #e7e4ef;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.form-input {
+    margin: 10px;
+    padding: 10px;
+}
+.contact-copyright {
+    margin-top: 10%;
+    text-align: center;
 }
 ul {
     list-style: none;

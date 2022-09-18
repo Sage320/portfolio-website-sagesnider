@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sage Snider UI/UX Designer</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen+Tokyo+Zoo">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- CDN link to SlickNav CSS  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"> 
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <!--link to jquery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!--link to slicknav specific link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <!--script for slicknav mobilemenu-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $("#menu").slicknav({
+                  prependTo: "#slicknav-menu"
+              });
+          });
+      </script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="open-title">sage snider</h1>
+                <div class="header-nav">
+                    <nav id="slicknav-menu"></nav>
+                    <nav id="menu">
+                        <ul>
+                            <li class="nav-button"><a href="index.html">Work</a></li>
+                            <li class="nav-button"><a href="about.html">About</a></li>
+                            <li class="nav-button"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="contact-text">
+                        <h3> Interested in working with me, let's connect!</h3>
+                        <p>
+                            Feel free to contact me through email, LinkedIn, or Behance
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="contact-list">
+                            <li class="footer-button"><a href="mailto:sagesnider9@gmail.com" class="footer-button">
+                                <img src="./images/email-icon.jpg" alt="email-icon" class="icon-email">
+                            </a>
+                            </li>
+                            <li class="footer-button"><a href="https://www.linkedin.com/in/sages9/" class="footer-button">
+                                <img src="./images/linkedin.jpg" alt="linkedin-icon" class="icon-size">
+                            </a>
+                            </li>
+                            <li class="footer-button"><a href="https://wwww.behance.net/sagesnider" class="footer-button">
+                                <img src="./images/behance.jpg" alt="behance-icon" class="icon-size">
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <form method="post" enctype="text/plain">
+                            <h3>
+                                Send me a message!
+                            </h3>
+                            <div class="form-input">
+                                <label>Name</label>
+                                <input type="text" placeholder="Name">
+                              </div>
+                              <div class="form-input">
+                                  <label>Questions</label>
+                                  <input type="text" placeholder="Questions">
+                              </div>
+                            <button type="submit" class="button">
+                                Submit
+                            </button>
+                        </form> 
+                    </div>
+                    <div class="contact-copyright">
+                        <p>
+                            copyright Sage Snider 2022-2023
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
